@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/css.css">
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <title>Par biroju - ieperkumi</title>
+</head>
+<body>
+    <div class="page">
+        <div class="mob__menu">
+            <div class="mobMenu__wrap">
+                <button class="mobMenu__closeBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none" class="mobMenu__closeBtn-icon">
+    <path d="M1.85582 38.0002C1.48879 38.0003 1.12999 37.8915 0.824791 37.6877C0.519597 37.4838 0.281724 37.194 0.141259 36.8549C0.000794821 36.5158 -0.0359502 36.1427 0.0356721 35.7827C0.107294 35.4227 0.284066 35.0921 0.543628 34.8326L34.8327 0.543526C35.1807 0.195512 35.6527 0 36.1449 0C36.637 0 37.1091 0.195512 37.4571 0.543526C37.8051 0.89154 38.0006 1.36355 38.0006 1.85571C38.0006 2.34788 37.8051 2.81989 37.4571 3.1679L3.168 37.457C2.99584 37.6295 2.7913 37.7663 2.56611 37.8595C2.34092 37.9527 2.09954 38.0006 1.85582 38.0002Z" fill="#565655"></path>
+    <path d="M36.145 38.0002C35.9012 38.0006 35.6599 37.9527 35.4347 37.8595C35.2095 37.7663 35.0049 37.6295 34.8328 37.457L0.543709 3.1679C0.195695 2.81989 0.000183105 2.34788 0.000183105 1.85571C0.000183105 1.36355 0.195695 0.89154 0.543709 0.543526C0.891723 0.195512 1.36373 0 1.8559 0C2.34806 0 2.82007 0.195512 3.16808 0.543526L37.4571 34.8326C37.7167 35.0921 37.8935 35.4227 37.9651 35.7827C38.0367 36.1427 38 36.5158 37.8595 36.8549C37.7191 37.194 37.4812 37.4838 37.176 37.6877C36.8708 37.8915 36.512 38.0003 36.145 38.0002Z" fill="#565655"></path>
+    </svg>
+                </button>
+                <div class="mobMenu__phone">
+                    <a href="#" class="mobMenuPhone__link">
+                        <img src="./img/phone-white-icon.png" class="mobMenuPhone__link-icon" alt="">
+                        <span class="mobMenuPhone__link-span">+371 27777777</span>
+                    </a>
+                </div>
+                <div class="mobMenu__lang">
+                    <a href="#" class="language__link language__link-active">LV</a>
+                    <a href="#" class="language__link">RU</a>
+                    <a href="#" class="language__link">EN</a>
+                </div>
+                <div class="mobMenu__content">
+                    <ul class="mobMenu__ul">
+                        <li class="mobMenu__li">
+                            <a href="#" class="mobMenu__link mobMenu__link-active">Par birojumu</a>
+                            <ul class="mobMenu__sub">
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Jaunumi</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Vēsture</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Zīmogi</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Galerija</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Iepirkumi</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Publikācija</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Pasākumi korupcijas risku novēršanai</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Datu apstrādes politika</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobMenu__li">
+                            <a href="#" class="mobMenu__link mobMenu__link-active">Likumdošana</a>
+                            <ul class="mobMenu__sub">
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">LR normatīvie akti</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Konvencija</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">ES iestāžu saraksts</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Gada atšķirības zīmes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobMenu__li">
+                            <a href="#" class="mobMenu__link mobMenu__link-active">Uzņēmējiem</a>
+                            <ul class="mobMenu__sub">
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Pieteikumu formas</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Pakalpojumu cenas</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Provēšanas pakalpojumu kalkulators</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Provēšana</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Juvelierizstrādājumu viltojumi</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Drošības datu lapas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobMenu__li">
+                            <a href="#" class="mobMenu__link mobMenu__link-active">Pircējiem</a>
+                            <ul class="mobMenu__sub">
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Dārgakmeņu testēšana</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Informācija par dimantiem</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Dimantu kvalitāte</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Juvelierizstrādājumu viltojumi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobMenu__li">
+                            <a href="#" class="mobMenu__link mobMenu__link-active">Reģistri</a>
+                            <ul class="mobMenu__sub">
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Saim. darb. vietu reģistrs</a>
+                                </li>
+                                <li class="mobMenuSub__li">
+                                    <a href="#" class="mobMenuSub__link">Personisko zīmogu reģistrs</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobMenu__li">
+                            <a href="#" class="mobMenu__link mobMenu__link-active">Ārejie resursi</a>
+                        </li>
+                        <li class="mobMenu__li">
+                            <a href="#" class="mobMenu__link mobMenu__link-active">Kontakti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__wrap">
+                        <div class="language">
+                            <div class="language__wrap">
+                                <a href="#" class="language__link language__link-active">LV</a>
+                                <a href="#" class="language__link">RU</a>
+                                <a href="#" class="language__link">EN</a>
+                            </div>
+                        </div>
+                        <div class="logo__wrap">
+                            <a href="#" class="logo__link">
+                                <img src="./img/logo.png" class="logo__img" alt="">
+                            </a>
+                        </div>
+                        <div class="header__contact">
+                            <a href="#" class="contact__link">
+                                <img src="./img/phone-icon.png" class="contactLink__img" alt="">
+                                <span class="contact__link-span">+371 27777777</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile">
+                <div class="headerMobile__logoWrap">
+                    <a href="#" class="headerMobileLogo__link">
+                        <img src="./img/logo.png" class="headerMobileLogo__link-img" alt="">
+                    </a>
+                </div>
+                <div class="burger__btnWrap">
+                    <button type="button" class="burger__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28" fill="none" class="burger__btn-icon">
+<path d="M30.8592 3.12964C29.9967 3.12964 29.2974 2.42903 29.2974 1.56482C29.2974 0.700607 29.9967 6.5534e-07 30.8592 6.5534e-07H38.4383C39.3008 6.5534e-07 40 0.700607 40 1.56482C40 2.42903 39.3008 3.12964 38.4383 3.12964H30.8592ZM1.56175 3.12964H23.8262C24.6888 3.12964 25.388 2.42903 25.388 1.56482C25.388 0.700607 24.6888 6.5534e-07 23.8262 6.5534e-07H1.56175C0.699232 -0.000782145 0 0.699824 0 1.56482C0 2.42981 0.699232 3.12964 1.56175 3.12964ZM1.56175 14.9953H38.4383C39.3008 14.9953 40 14.2947 40 13.4305C40 12.5663 39.3008 11.8657 38.4383 11.8657H1.56175C0.699232 11.8657 0 12.5663 0 13.4305C0 14.2947 0.699232 14.9953 1.56175 14.9953ZM1.56175 28H38.4383C39.3008 28 40 27.2994 40 26.4352C40 25.571 39.3008 24.8704 38.4383 24.8704H1.56175C0.699232 24.8696 0 25.5702 0 26.4344C0 27.2994 0.699232 28 1.56175 28Z" fill="#565655"></path>
+</svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="menu">
+            <div class="container">
+                <div class="menu__wrap">
+                    <ul class="nav">
+                        <li class="nav__elem nav__elem-active nav__elem-hasSub">
+                            <a href="#" class="nav__link">Par birojumu <span class="nav__link-arrow"></span></a>
+                            <ul class="nav__subMenu">
+                                <div class="navSubMenu__wrap">
+                                    <li class="navSubMenu__elem navSubMenu__elem-active">
+                                        <a href="#" class="navSubMenu__link">Jaunumi</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Vēsture</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Zīmogi</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Galerija</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Iepirkumi</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Publikācija</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Pasākumi korupcijas risku novēršanai</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Datu apstrādes politika</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav__elem nav__elem-hasSub">
+                            <a href="#" class="nav__link">Likumdošana <span class="nav__link-arrow"></span></a>
+                            <ul class="nav__subMenu">
+                                <div class="navSubMenu__wrap">
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">LR normatīvie akti</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Konvencija</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">ES iestāžu saraksts</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Gada atšķirības zīmes</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav__elem nav__elem-hasSub">
+                            <a href="#" class="nav__link">Uzņēmējiem <span class="nav__link-arrow"></span></a>
+                            <ul class="nav__subMenu">
+                                <div class="navSubMenu__wrap">
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Pieteikumu formas</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Pakalpojumu cenas</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Provēšanas pakalpojumu kalkulators</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Provēšana</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Juvelierizstrādājumu viltojumi</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Drošības datu lapas</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav__elem nav__elem-hasSub">
+                            <a href="#" class="nav__link">Pircējiem <span class="nav__link-arrow"></span></a>
+                            <ul class="nav__subMenu">
+                                <div class="navSubMenu__wrap">
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Dārgakmeņu testēšana</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Informācija par dimantiem</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Dimantu kvalitāte</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Juvelierizstrādājumu viltojumi</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav__elem nav__elem-hasSub">
+                            <a href="#" class="nav__link">Reģistri <span class="nav__link-arrow"></span></a>
+                            <ul class="nav__subMenu">
+                                <div class="navSubMenu__wrap">
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Saim. darb. vietu reģistrs</a>
+                                    </li>
+                                    <li class="navSubMenu__elem">
+                                        <a href="#" class="navSubMenu__link">Personisko zīmogu reģistrs</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav__elem">
+                            <a href="#" class="nav__link">Ārejie resursi</a>
+                        </li>
+                        <li class="nav__elem">
+                            <a href="#" class="nav__link">Kontakti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <main class="bg-1">
+            <div class="wrapper">
+                <section class="breadcrumbs">
+                    <div class="container">
+                        <h1 class="breadcrumbs__title">Mājas lapā norādīta informācija par iepirkumiem līdz 2022. gadu.</h1>
+                    </div>
+                </section>
+                <section class="purchases">
+                    <div class="container">
+                        <div class="purchases__wrap">
+                            <p class="purchases__text">Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. Tajā laikā kāds nezināms iespiedējs izveidoja teksta fragmentu, lai nodrukātu grāmatu ar burtu paraugiem. Tas ir ne tikai pārdzīvojis piecus gadsimtus, bet bez ievērojamām izmaiņām saglabājies arī mūsdienās, pārejot uz datorizētu teksta apstrādi. Tā popularizēšanai 60-tajos gados kalpoja Letraset burtu paraugu publicēšana ar Lorem Ipsum teksta fragmentiem un, nesenā pagātnē, tādas maketēšanas programmas kā Aldus PageMaker, kuras šablonu paraugos ir izmantots Lorem Ipsum teksts.</p>
+                            <div class="purchases__info">
+                                <div class="purchases__header">
+                                    <div class="purchasesHeader__dateWrap">
+                                        <p class="purchasesHeaderDate__text">
+                                            <span>Datums:</span> 21.03.2018.
+                                        </p>
+                                    </div>
+                                    <div class="purchasesHeader__nrWrap">
+                                        <p class="purchasesHeaderNr__text">
+                                            <span>Identifikācijas Nr:</span> LPB 2018/1
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="purchases__titleWrap">
+                                    <h2 class="purchases__title">Energodispersā rentgenfluorescences spektrometra (ED XRF) piegāde un uzstādīšana</h2>
+                                </div>
+                                <div class="purchases__docWrap">
+                                    <p class="purchases__doc">Iepirkuma dokumenti: <a href="#" class="purchasesDoc__link">Nolikums</a></p>
+                                </div>
+                                <div class="purchases__footer">
+                                    <div class="purchasesFooter__left">
+                                        <h5 class="purchasesFooter__title">Piedāvājuma iesniegšanas termiņš</h5>
+                                        <p class="purchasesFooter__text">16.04.2018. plkst. 11:00</p>
+                                    </div>
+                                    <div class="purchasesFooter__right">
+                                        <h5 class="purchasesFooter__title">Piedāvājuma iesniegšanas termiņš</h5>
+                                        <div class="purchasesFooter__links">
+                                            <a href="#" class="purchasesFooter__link">Piedāvājumu atvēršanas protokols</a>
+                                            <a href="#" class="purchasesFooter__link">Ziņojums</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="purchases__text">Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. Tajā laikā kāds nezināms iespiedējs izveidoja teksta fragmentu, lai nodrukātu grāmatu ar burtu paraugiem. Tas ir ne tikai pārdzīvojis piecus gadsimtus, bet bez ievērojamām izmaiņām saglabājies arī mūsdienās, pārejot uz datorizētu teksta apstrādi. Tā popularizēšanai 60-tajos gados kalpoja Letraset burtu paraugu publicēšana ar Lorem Ipsum teksta fragmentiem un, nesenā pagātnē, tādas maketēšanas programmas kā Aldus PageMaker, kuras šablonu paraugos ir izmantots Lorem Ipsum teksts.</p>
+                            <div class="purchases__info">
+                                <div class="purchases__header">
+                                    <div class="purchasesHeader__dateWrap">
+                                        <p class="purchasesHeaderDate__text">
+                                            <span>Datums:</span> 21.03.2018.
+                                        </p>
+                                    </div>
+                                    <div class="purchasesHeader__nrWrap">
+                                        <p class="purchasesHeaderNr__text">
+                                            <span>Identifikācijas Nr:</span> LPB 2018/1
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="purchases__titleWrap">
+                                    <h2 class="purchases__title">Energodispersā rentgenfluorescences spektrometra (ED XRF) piegāde un uzstādīšana</h2>
+                                </div>
+                                <div class="purchases__docWrap">
+                                    <p class="purchases__doc">Iepirkuma dokumenti: <a href="#" class="purchasesDoc__link">Nolikums</a></p>
+                                </div>
+                                <div class="purchases__footer">
+                                    <div class="purchasesFooter__left">
+                                        <h5 class="purchasesFooter__title">Piedāvājuma iesniegšanas termiņš</h5>
+                                        <p class="purchasesFooter__text">16.04.2018. plkst. 11:00</p>
+                                    </div>
+                                    <div class="purchasesFooter__right">
+                                        <h5 class="purchasesFooter__title">Piedāvājuma iesniegšanas termiņš</h5>
+                                        <div class="purchasesFooter__links">
+                                            <a href="#" class="purchasesFooter__link">Piedāvājumu atvēršanas protokols</a>
+                                            <a href="#" class="purchasesFooter__link">Ziņojums</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="purchases__text">Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. Tajā laikā kāds nezināms iespiedējs izveidoja teksta fragmentu, lai nodrukātu grāmatu ar burtu paraugiem. Tas ir ne tikai pārdzīvojis piecus gadsimtus, bet bez ievērojamām izmaiņām saglabājies arī mūsdienās, pārejot uz datorizētu teksta apstrādi. Tā popularizēšanai 60-tajos gados kalpoja Letraset burtu paraugu publicēšana ar Lorem Ipsum teksta fragmentiem un, nesenā pagātnē, tādas maketēšanas programmas kā Aldus PageMaker, kuras šablonu paraugos ir izmantots Lorem Ipsum teksts.</p>
+                            <div class="purchases__info">
+                                <div class="purchases__header">
+                                    <div class="purchasesHeader__dateWrap">
+                                        <p class="purchasesHeaderDate__text">
+                                            <span>Datums:</span> 21.03.2018.
+                                        </p>
+                                    </div>
+                                    <div class="purchasesHeader__nrWrap">
+                                        <p class="purchasesHeaderNr__text">
+                                            <span>Identifikācijas Nr:</span> LPB 2018/1
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="purchases__titleWrap">
+                                    <h2 class="purchases__title">Energodispersā rentgenfluorescences spektrometra (ED XRF) piegāde un uzstādīšana</h2>
+                                </div>
+                                <div class="purchases__docWrap">
+                                    <p class="purchases__doc">Iepirkuma dokumenti: <a href="#" class="purchasesDoc__link">Nolikums</a></p>
+                                </div>
+                                <div class="purchases__footer">
+                                    <div class="purchasesFooter__left">
+                                        <h5 class="purchasesFooter__title">Piedāvājuma iesniegšanas termiņš</h5>
+                                        <p class="purchasesFooter__text">16.04.2018. plkst. 11:00</p>
+                                    </div>
+                                    <div class="purchasesFooter__right">
+                                        <h5 class="purchasesFooter__title">Piedāvājuma iesniegšanas termiņš</h5>
+                                        <div class="purchasesFooter__links">
+                                            <a href="#" class="purchasesFooter__link">Piedāvājumu atvēršanas protokols</a>
+                                            <a href="#" class="purchasesFooter__link">Ziņojums</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="purchases__text">Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. Tajā laikā kāds nezināms iespiedējs izveidoja teksta fragmentu, lai nodrukātu grāmatu ar burtu paraugiem. Tas ir ne tikai pārdzīvojis piecus gadsimtus, bet bez ievērojamām izmaiņām saglabājies arī mūsdienās, pārejot uz datorizētu teksta apstrādi. Tā popularizēšanai 60-tajos gados kalpoja Letraset burtu paraugu publicēšana ar Lorem Ipsum teksta fragmentiem un, nesenā pagātnē, tādas maketēšanas programmas kā Aldus PageMaker, kuras šablonu paraugos ir izmantots Lorem Ipsum teksts.</p>
+                            <div class="purchases__info">
+                                <div class="purchases__header">
+                                    <div class="purchasesHeader__dateWrap">
+                                        <p class="purchasesHeaderDate__text">
+                                            <span>Datums:</span> 21.03.2018.
+                                        </p>
+                                    </div>
+                                    <div class="purchasesHeader__nrWrap">
+                                        <p class="purchasesHeaderNr__text">
+                                            <span>Identifikācijas Nr:</span> LPB 2018/1
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="purchases__titleWrap">
+                                    <h2 class="purchases__title">Energodispersā rentgenfluorescences spektrometra (ED XRF) piegāde un uzstādīšana</h2>
+                                </div>
+                                <div class="purchases__docWrap">
+                                    <p class="purchases__doc">Iepirkuma dokumenti: <a href="#" class="purchasesDoc__link">Nolikums</a></p>
+                                </div>
+                                <div class="purchases__footer">
+                                    <div class="purchasesFooter__left">
+                                        <h5 class="purchasesFooter__title">Piedāvājuma iesniegšanas termiņš</h5>
+                                        <p class="purchasesFooter__text">16.04.2018. plkst. 11:00</p>
+                                    </div>
+                                    <div class="purchasesFooter__right">
+                                        <h5 class="purchasesFooter__title">Piedāvājuma iesniegšanas termiņš</h5>
+                                        <div class="purchasesFooter__links">
+                                            <a href="#" class="purchasesFooter__link">Piedāvājumu atvēršanas protokols</a>
+                                            <a href="#" class="purchasesFooter__link">Ziņojums</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer__wrap">
+                        <div class="footer__left">
+                            <div class="footer__info">
+                                <div class="footer__logoWrap">
+                                    <a href="#" class="footerLogo__link">
+                                        <img src="./img/logo-white.png" class="footerLogo__link-img" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer__contact">
+                                    <a href="#" class="footerContact__link">
+                                        <img src="./img/phone-white-icon.png" class="footerContactLink__img" alt="">
+                                        <span class="footerContactLink-span">+371 27777777</span>
+                                    </a>
+                                </div>
+                                <div class="footer__socials">
+                                    <a href="#" class="footer__social">
+                                        <img src="./img/fb-icon.png" class="footer__social-img" alt="">
+                                    </a>
+                                    <a href="#" class="footer__social">
+                                        <img src="./img/instagram-icon.png" class="footer__social-img" alt="">
+                                    </a>
+                                    <a href="#" class="footer__social">
+                                        <img src="./img/twitter-icon.png" class="footer__social-img" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            <div class="footer__col">
+                                <h5 class="footerCol__title">Par biroju</h5>
+                                <ul class="footerCol__ul">
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Jaunumi</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Vēsture</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Zīmogi</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Galerija</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Iepirkumi</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Publikācijas</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Pasākumi korupcijas risku novēršanai</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Datu apstrādes politika</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__col">
+                                <h5 class="footerCol__title">Likumdošana</h5>
+                                <ul class="footerCol__ul">
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">LR normatīvie akti</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Konvencijas</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">ES iestāžu saraksts</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Gada atšķirības zīmes</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__col">
+                                <h5 class="footerCol__title">Uzņēmējiem</h5>
+                                <ul class="footerCol__ul">
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Pieteikumu formas</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Pakalpojumu cenas</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Provēšanas pakalpojumu kalkulators</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Provēšana</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Juvelierizstrādājumu viltojumi</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Drošības datu lapas</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__col">
+                                <h5 class="footerCol__title">Pircējiem</h5>
+                                <ul class="footerCol__ul">
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Dārgakmeņu testēšana</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Informācija par dimantiem</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Dimantu kvalitāte</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Juvelierizstrādājumu viltojumi</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__col">
+                                <h5 class="footerCol__title">Reģistri</h5>
+                                <ul class="footerCol__ul">
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Saimn. darb. vietu reģistrs</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Personisko zīmogu reģistrs</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Ārējie resursi</a></li>
+                                    <li class="footerCol__li"><a href="#" class="footerColLi__link">Kontakti</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/js.js"></script>
+</body>
+</html>
