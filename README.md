@@ -18,6 +18,8 @@ https://github.com/wlad96/prove
 
 ---
 
+## 🖼 Preview
+
 ![Website preview](img/preview.png)
 
 ---
